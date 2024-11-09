@@ -1,0 +1,284 @@
+* {
+    margin:0;
+    padding:0;
+    font-family: "Montserrat", sans-serif;
+}
+
+.main_box {
+    background: url("photo.jpg");
+    height:100vh;
+    background-size: cover;
+}
+
+.main_box h1 {
+    color:white;
+    font-weight:500;
+    font-size:95px;
+    text-align: center;
+    padding:35vh;
+    animation:animate 3s ease-in-out 0s 1 normal;
+    text-shadow: 0 0 10px grey;
+}
+
+@keyframes animate {
+    0% {
+        opacity:0;
+        text-shadow: 0 0 4px grey;
+    }
+
+    50% {
+        opacity:0.5;
+        text-shadow: 0 0 8px grey;
+    }
+
+    100% {
+        opacity:1;
+        text-shadow: 0 0 12px grey;
+    }
+}
+
+
+.btn_one i {
+    color:white;
+    position:absolute;
+    top:15px;
+    left:30px;
+    font-size:30px;
+    font-weight:700;
+    line-height:60px;
+    transition:all 0.5s linear 0s;
+}
+
+.sidebar_menu {
+    height:100vh;
+    width:300px;
+    position:fixed;
+    left:-300px;
+    box-shadow: 0 0 6px rgb(255,255,255,0.5);
+    background-color:rgba(255,255,255,0.1);
+    transition:all 0.5s linear 0s;
+}
+
+.sidebar_menu .logo {
+    position:absolute;
+    width:100%;
+    line-height: 60px;
+    box-shadow: 0 0 4px rgb(255,255,255,0.5);
+    height:60px;
+}
+
+.sidebar_menu .logo a {
+    position:absolute;
+    width:100%;
+    left:40px;
+    text-decoration: none;
+    color:white;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.btn_one i:hover {
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.btn_two i:hover {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.btn_two i {
+    color:grey;
+    font-size:25px;
+    line-height:60px;
+    position:absolute;
+    left:265px;
+    top:6px;
+    transition:all 0.5s linear 0s;
+}
+
+.sidebar_menu .menu {
+    color:white;
+    position:absolute;
+    width:100%;
+    top:100px;
+}
+
+.sidebar_menu .menu li {
+    margin:6px;
+    padding:14px 20px;
+}
+
+.sidebar_menu .menu i,a {
+    color:white;
+    text-decoration: none;
+    font-size:20px;
+}
+
+.sidebar_menu .menu i {
+    padding-right:8px;
+}
+
+.sidebar_menu .social_media {
+    position:absolute;
+    left:25%;
+    bottom:70px;
+}
+
+.sidebar_menu .menu li:hover {
+    box-shadow: 0 0 4px rgb(255,255,255,0.5);
+}
+
+
+.sidebar_menu .social_media i {
+    color:white;
+    opacity:0.5;
+    padding:5px
+}
+
+.sidebar_menu .social_media i:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+#check:checked ~ .sidebar_menu {        /* sibling selector - tilde selector */
+    left:0;
+}
+
+#check:checked ~ .btn_one {
+    opacity:0;
+}
+
+#check {
+    display:none;       /* does not display the item on the screen */
+} 
+
+#photo {
+    font-family: "Playfair Display", serif;
+}
+
+#maniac {
+    font-family: "Playwrite CU", cursive;
+}
+
+.moreinfo {
+    position:absolute;
+    top:0px;
+    left: 80.3%;
+}
+
+.sidemenu2 {
+    height:100vh;
+    width:300px;
+    position:fixed;
+    right:-300px;
+    box-shadow: 0 0 6px rgb(255,255,255,0.5);
+    background-color:rgba(0,0,0,0.5);
+    transition:all 0.5s linear 0s;
+}
+
+.sidemenu2 .logo2 {
+    position:absolute;
+    line-height:60px;
+    width:100%;
+    height:60px;
+    box-shadow: 0 0 4px rgba(255,255,255,0.5);
+}
+
+.explore {
+    position:absolute;
+    left:30px;
+    text-decoration: none;
+    color:white;
+    font-size: 35px;
+    font-weight: 500;
+    font-family: "Playfair Display", serif;
+}
+
+.btn_three i {
+    color:white;
+    font-size:30px;
+    position:absolute;
+    top:15px;
+    left: 225px;
+    font-weight:700;
+    line-height:60px;
+    transition:all 0.5s linear 0s;
+}
+
+.sidemenu2 {
+    color:white;
+}
+
+.btn_four i {
+    color:white;
+    font-size:25px;
+    position:absolute;
+    line-height: 60px;
+    left:85%;
+}
+
+.menu2 {
+    color:white;
+    position:absolute;
+    width:100%;
+    top:100px;
+}
+
+.menu2 ul {
+    list-style: none;
+}
+
+.menu2 li {
+    margin:6px;
+    padding:30px 20px;
+}
+
+.menu2 li a {
+    color:white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.menu2 li i {
+    padding-right: 8px;
+}
+
+.menu2 li:hover {
+    box-shadow:0 0 4px rgba(255,255,255,0.5);
+}
+
+.btn_three i:hover {
+    font-size:35px;
+    cursor: pointer;
+}
+
+.btn_four i:hover {
+    font-size:30px;
+    cursor: pointer;
+}
+
+.menu2 span .more {
+    text-decoration: underline;
+    position:absolute;
+    margin:25px;
+    left:20%;
+    opacity:0.7;
+}
+
+.menu2 span .more:hover {
+    opacity:1;
+    transform: scale(1.05);
+}
+
+#info:checked ~ .sidemenu2 {
+    right:0px;
+}
+
+#info:checked ~ .btn_three {
+    opacity:0;
+}
+
+#info {
+    display:none;
+}
